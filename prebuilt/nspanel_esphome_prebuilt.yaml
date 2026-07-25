@@ -11,8 +11,8 @@
 ---
 substitutions:
   device_name: nspanel
-  wifi_ssid: nspanel
-  wifi_password: NSPanel_Blueprint
+  wifi_ssid: OnlyLights
+  wifi_password: Gridgrid420
 
 packages:
   core_package: !include ../esphome/nspanel_esphome_core.yaml
@@ -50,7 +50,7 @@ captive_portal:
   id: ap_captive_portal
 
 dashboard_import:
-  package_import_url: github://Blackymas/NSPanel_HA_Blueprint/prebuilt/nspanel_esphome_prebuilt.yaml@main
+  package_import_url: github.com/kcsaba1996-a11y/blueprint/blob/cfd31af6466bb719ac436213cd52bce6d93687df/prebuilt/nspanel_esphome_prebuilt.yaml@main
   import_full_config: false
 
 esp32:
@@ -109,7 +109,7 @@ text:
     internal: false
     update_interval: never
     restore_value: true
-    initial_value: "https://raw.githubusercontent.com/Blackymas/NSPanel_HA_Blueprint/main/prebuilt/nspanel_esphome_prebuilt.bin"
+    initial_value: "https://github.com/kcsaba1996-a11y/blueprint/blob/cfd31af6466bb719ac436213cd52bce6d93687df/prebuilt/nspanel_esphome_prebuilt.bin"
     on_value:
       then:
         - lambda: |-
@@ -119,7 +119,7 @@ update:
   - id: update_std
     platform: http_request
     name: Firmware Update
-    source: "https://raw.githubusercontent.com/Blackymas/NSPanel_HA_Blueprint/main/prebuilt/nspanel_esphome_prebuilt.manifest.json"
+    source: "https://github.com/kcsaba1996-a11y/blueprint/blob/cfd31af6466bb719ac436213cd52bce6d93687df/prebuilt/nspanel_esphome_prebuilt.manifest.json"
 
 wifi:
   networks: !remove
