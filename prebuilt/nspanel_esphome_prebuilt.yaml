@@ -11,8 +11,8 @@
 ---
 substitutions:
   device_name: nspanel
-  wifi_ssid: nspanel
-  wifi_password: NSPanel_HA_Blueprint
+  wifi_ssid: OnlyLights  
+  wifi_password: Gridgrid420
   TAG_PREBUILT: nspanel_ha_blueprint.prebuilt
 
 packages:
