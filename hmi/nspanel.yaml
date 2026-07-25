@@ -1,0 +1,56 @@
+substitutions:
+  name: nspanel
+  friendly_name: nspanel
+esphome:
+  name: ${name}
+  name_add_mac_suffix: false
+  friendly_name: ${friendly_name}
+  area: Living Room
+api:
+  encryption:
+    key: "foafUporycDuzidlPqGCcy1jQUk1r3KBOwskNVJBR5g="
+
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    channel: "1"
+    ssid: kcsaba1996
+    password: Gridgrid420
+  min_auth_mode: WPA
+  enable_btm: false
+web_server:
+  auth:
+    username: kcsaba1996
+    password: !secret nspanel_d9842c__web_password
+    type: basic
+  local: false
+  enable_private_network_access: false
+  ota: false
+esp32:
+  variant: ESP32
+  framework:
+    type: esp-idf
+async_tcp:
+
+sensor:
+  - platform: wifi_signal
+    name: AccesPoint
+    id: sensor_wifi_signal_1
+
+http_request:
+
+network:
+  enable_ipv6: true
+  enable_high_performance: true
+
+output:
+  - platform: gpio
+    pin: 23
+    id: output_led
+
+mqtt:
+  broker: Esppanel
+  password: Gridgrid420
+  username: Kcsaba1996
