@@ -15,8 +15,8 @@
   "builds": {
     "chipFamily": "ESP32",
     "ota": {
-      "path": "https://raw.githubusercontent.com/Blackymas/NSPanel_HA_Blueprint/main/prebuilt/nspanel_esphome_prebuilt.bin",
-      "release_url": "https://github.com/Blackymas/NSPanel_HA_Blueprint/releases/tag/v4.3.12"
+      "path": "https://github.com/kcsaba1996-a11y/blueprint/blob/bb8617833152a8d9b10fcf7a993b1f402d6070e5/prebuilt/nspanel_esphome_prebuilt.bin",
+      "release_url": "https://github.com/kcsaba1996-a11y/blueprint/tree/v2026041"
     }
   }
 }
