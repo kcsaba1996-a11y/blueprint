@@ -56,7 +56,7 @@ captive_portal:
   id: ap_captive_portal
 
 dashboard_import:
-  package_import_url: github://Blackymas/NSPanel_HA_Blueprint/prebuilt/nspanel_esphome_prebuilt.yaml@main
+  package_import_url: github://kcsaba1996-a11y/blueprint/blob/5bdc34927f652618e4b04a9bcee73661d429e08d/prebuilt/nspanel_esphome_prebuilt.yaml@main
   import_full_config: false
 
 esp32:
